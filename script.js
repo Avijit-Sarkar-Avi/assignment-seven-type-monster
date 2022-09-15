@@ -93,7 +93,7 @@ const gameOver = () => {
 
   // restart everything
   startTime = null;
-  errorCount = "";
+  errorCount = 0;
   userText = "";
   display.classList.add("inactive");
 };
