@@ -81,6 +81,12 @@ body {
   margin: 10px 0;
 }
 
+@media only screen and (max-width: 992px) {
+  #show-time {
+    margin: 20px 0;
+  }
+}
+
 .green {
   color: #9dffad;
 }
@@ -149,15 +155,14 @@ button {
 
 #histories {
   display: flex;
-
+  flex-wrap: wrap;
+  justify-content: space-around;
 
 }
 
 @media only screen and (max-width: 992px) {
   #histories {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    flex-direction: column;
   }
 }
 
@@ -165,7 +170,7 @@ button {
   width: 100%;
   height: 100%;
   padding: 50px;
-  display: flex;
+  /* display: flex; */
   justify-content: space-between;
   align-items: center;
   padding: 20px 30px;
@@ -177,6 +182,14 @@ button {
       rgba(255, 255, 255, 0.05) 99.85%);
   backdrop-filter: blur(5px);
   margin-bottom: 30px;
+  margin-right: 10px;
+  flex: 30%;
+}
+
+@media only screen and (max-width: 992px) {
+  .card {
+    flex: 100%;
+  }
 }
 
 #modal-background {
@@ -197,7 +210,7 @@ button {
     width: 100%;
   }
 
-  .card {
+  /* .card {
     flex-direction: column;
-  }
+  } */
 }
